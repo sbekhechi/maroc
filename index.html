@@ -3,31 +3,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Maroc</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <div class="header">
+  <a name="home"><div class="header"></a>
 
     <div class="navbar" id='nav'>
 
       <ul>
-        <li>Home</li>
-        <li>Itinerary</li>
-        <li>Costs</li>
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#disc">Discover</a></li>
+        <li><a href="#itin">Itinerary</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
     </div>
   </div>
 
-  <div class="box" align="center">
 
-    <h1 style="font-family: sans-serif;">Itinerary</h1>
+<!-- Discover -->
+  <div class="box1" align="center">
+
+    <a name="disc"><br></a>
+    <h1 style="margin-top: 100px;">Discover</h1>
+    <hr>
+    <br>
+
+    <div class="row">
+      <div class="column left">
+        <img src="yeux.jpg">
+      </div>
+      <div class="column right">
+        <h2>Explore Morocco With an Expert</h2>
+        <br>
+        <p>Dr. Amine Bekhechi, retired professor of French, is leading a 12 day tour of Morocco starting on February 3rd of 2020.</p>
+        <br>
+        <p>During this trip you will be learning about the Culture, the History and the Cuisine of Morocco as well as experiencing the beauty of the landscape, architecture, and people of this North African treasure.</p>
+      </div>
+    </div>
+
+    <br>
+    <hr>
 
   </div>
 
-  <script type="text/javascript">
 
+<!-- Itinerary -->
+  <div class="box1" align="center">
+
+    <a name="itin"><br></a>
+    <h1 style="margin-top: 100px;">Itinerary</h1>
+    <hr>
+    <br>
+    <h2>The discovery of Morocco will start in the city of Casabalanca, and will continue on to Rabat, Fes, Meknes, the desert of Morocco, Marrakech, Essaouira, and then return to Casablanca.</h2>
+
+  </div>
+
+
+<!-- Contact -->
+  <div class="box2" align="center">
+
+    <a name="contact"><br></a>
+    <h1 style="margin-top: 100px;">Contact</h1>
+    <hr>
+    <br>
+
+    <div class="row">
+      <div class="column left">
+        <br>
+        <img src="amine.jpg" style="transform:rotate(90deg);">
+      </div>
+      <div class="column right">
+        <p>If interested, please contact Amine Bekhechi at 507-413-2700 or abekhechi65@gmail.com.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script type="text/javascript">
     var nav = document.getElementByID('nav');
       window.onscroll = function(){
         if (window.pageYOffset >100){
@@ -39,58 +95,7 @@
           nav.style.boxShadow = "none";
         }
       }
-
   </script>
-
-
-
-  <style type="text/css">
-
-    *{
-      padding: 0px;
-      margin: 0px;
-      box-sizing: border-box;
-    }
-
-    .header{
-      width: 100%;
-      height: 1000px;
-      background-image: url(morocco.jpg);
-      background-size: cover;
-    }
-
-    .navbar{
-      width: 100%;
-      padding: 20px;
-      position: fixed;
-      top: 0px;
-      transition: .5s;
-    }
-
-    .navbar ul li{
-      List-style-type: none;
-      display: inline-block;
-      padding: 10px 50px;
-      color: black;
-      font-size: 24px;
-      font-family: sans-serif;
-      cursor: pointer;
-      border-radius: 10px;
-      transition: .5s;
-    }
-
-    .navbar ul li:hover{
-      background: orange;
-    }
-
-    .box{
-      width: 80%;
-      height: 2000px;
-      background: white;
-      margin: 20px auto;
-    }
-
-  </style>
 
 
 </html>
