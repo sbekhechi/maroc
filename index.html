@@ -10,16 +10,16 @@
 
   <a name="home"><div class="header"></a>
 
-    <div class="navbar" id='nav'>
-
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#disc">Discover</a></li>
-        <li><a href="#itin">Itinerary</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#disc">Discover</a>
+      <a href="#itin">Itinerary</a>
+      <a href="#contact">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+
   </div>
 
 
@@ -33,7 +33,7 @@
 
     <div class="row">
       <div class="column left">
-        <img src="yeux.jpg">
+        <img src="yeux.jpg" style="max-width: 100%;">
       </div>
       <div class="column right">
         <h2>Explore Morocco With an Expert</h2>
@@ -46,6 +46,7 @@
 
     <br>
     <hr>
+
 
   </div>
 
@@ -83,18 +84,15 @@
   </div>
 
 
-  <script type="text/javascript">
-    var nav = document.getElementByID('nav');
-      window.onscroll = function(){
-        if (window.pageYOffset >100){
-          nav.style.background = "#007bff";
-          nav.style.boxShadow = "0px 4px 2px blue";
-        }
-        else{
-          nav.style.background =  "transparent";
-          nav.style.boxShadow = "none";
-        }
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
+    }
   </script>
 
 
