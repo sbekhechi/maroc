@@ -7,6 +7,10 @@
     <title>Maroc</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
 
   <a name="home"><div class="header"></a>
@@ -24,7 +28,7 @@
   </div>
 
 
-<!-- Discover -->
+<!-- Discover: START -->
   <div class="box1" align="center">
 
     <a name="disc"><br></a>
@@ -32,9 +36,9 @@
     <hr>
     <br>
 
-    <div class="row">
+    <div class="container">
       <div class="column left">
-        <img src="yeux.jpg" style="max-width: 100%;">
+        <img src="photos/yeux.jpg" style="max-width: 100%;">
       </div>
       <div class="column right">
         <h2>Explore Morocco With an Expert</h2>
@@ -46,13 +50,13 @@
     </div>
 
     <br>
-    <hr>
-
-
   </div>
 
+<!-- Discover: END -->
 
-<!-- Itinerary -->
+
+
+<!-- Itinerary: START -->
   <div class="box1" align="center">
 
     <a name="itin"><br></a>
@@ -60,11 +64,16 @@
     <hr>
     <br>
     <h2>The discovery of Morocco will start in the city of Casabalanca, and will continue on to Rabat, Fes, Meknes, the desert of Morocco, Marrakech, Essaouira, and then return to Casablanca.</h2>
-
+    <br>
+    <br>
+    <br>
+    <h3>For a more detailed Itinerary (including dates, approximate costs etc)</h3>
+    <h3>Check out this <a href="itinerary.pdf">PDF</a></h3>
+    <br>
   </div>
+<!-- Itinerary: END -->
 
-
-<!-- Contact -->
+<!-- Contact: START -->
   <div class="box2" align="center">
 
     <a name="contact"><br></a>
@@ -72,16 +81,100 @@
     <hr>
     <br>
 
-    <div class="row">
-      <div class="column left">
-        <br>
-        <img src="amine.jpg" style="transform:rotate(90deg);">
-      </div>
-      <div class="column right">
-        <p>If interested, please contact Amine Bekhechi at 507-413-2700 or abekhechi65@gmail.com.</p>
-      </div>
+    <div class="container">
+        <div class="column left">
+          <img src="photos/amine.jpg" style="width:100%">
+        </div>
+        <div class="column right">
+          <h2>For more information or questions please use the contact information below</h2>
+          <br>
+          <h3>Amine Bekhechi | <a href="mailto:abekhechi65@gmail.com">abekhechi65@gmail.com</a> | 507-413-2700</h3>
+        </div>
     </div>
 
+  </div>
+<!-- Contact: END -->
+
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="photos/baloon.jpg" alt="Art of Fes" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/wow.jpg" alt="Art of Fes" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/spit.jpg" alt="Art of Fes" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/alley.jpg" alt="Alley ways of Fes" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/valley.jpg" alt="Atlas Mountains" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/camel.jpg" alt="Desert" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/essouira.jpg" alt="Essouira" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/strart.jpg" alt="Essouira" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/door.jpg" alt="Fes" style="width:100% height:30%;" transform: scaleX(-1);>
+        </div>
+
+        <div class="item">
+          <img src="photos/goats.jpg" alt="Tree Goats" style="width:100% height:30%;" transform: scaleX(-1);>
+        </div>
+
+        <div class="item">
+          <img src="photos/arabic.jpg" alt="Caligraphy" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/sunset.jpg" alt="Sahara Sunset" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/knight.jpg" alt="Knight" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/tagine.jpg" alt="Tagine" style="width:100% height:30%;">
+        </div>
+
+        <div class="item">
+          <img src="photos/hotel.jpg" alt="Hotel" style="width:100% height:30%;">
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+    <br>
+    <br>
   </div>
 
 
@@ -94,6 +187,39 @@
         x.className = "topnav";
       }
     }
+
+
+
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-red", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-red";
+    }
+
+
+
   </script>
 
 
