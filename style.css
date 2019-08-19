@@ -128,7 +128,7 @@
 
   .column {
   float: left;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 400px; /* Should be removed. Only for demonstration */
   padding-left: 10px;
   }
 
